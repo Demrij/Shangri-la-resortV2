@@ -8,15 +8,17 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5rem;
     color: black;
-    background-color: lightsteelblue;
+    background-color: sandybrown;
+    padding: 1.5rem;
 
 }
 
 header{
     text-align: center;
-    background-color: lemonchiffon;
+    background-color: rgb(236, 250, 255);
     color: lightslategrey;
     padding: 2rem 0;
+    border-radius: .3rem;
 }
 
 .logo{
@@ -32,8 +34,57 @@ nav a{
 
     color: steelblue;
     text-decoration: none;
-    padding: 0;
-    
-
+    margin-bottom: 1rem;
 }  
+
+nav a:hover{
+    text-decoration: underline darkblue;
+}
+
+main{
+    padding-top: 1.5rem;
+}
+
+section{
+    background-color: lemonchiffon;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 .7rem 1rem lightblue;
+    margin-top: 2rem;
+}
+
+h1{
+    color: darkslateblue;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: darkslateblue;
+    margin-bottom: 2rem;
+}
+
+h3{
+    text-align: center;
+    color: darkslateblue;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+h4{
+    text-align: center;
+    color: darkslateblue;
+    margin-bottom: 1rem;
+}
+
+p{
+    margin: 1.5rem;
+}
+
+ul{
+    margin: 1rem;
+}
+
+
 
