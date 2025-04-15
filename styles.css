@@ -86,5 +86,26 @@ ul{
     margin: 1rem;
 }
 
+.hero-image {
+    max-width: 100%;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 1rem;
+
+}
+
+section img{
+    width: 80%;
+    border-radius: 1rem;
+    border: .5rem solid lightslategrey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .3rem;
+
+
+}
+
+
 
 
