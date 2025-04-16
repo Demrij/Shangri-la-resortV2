@@ -1,20 +1,21 @@
 function getWeather(){
-    const apiKey = 'dd715d9ec4ce8c060f5b6aa040416057';
-    const city = 'Cancun, MX';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid${apiKey}&units=metric`;
+
+    const apiKey = '68b0c54f38bc04e685856e5311c63301';
+    
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Cancunappid=${apiKey}&units=metric'
 
     fetch(url) 
         .then(response => response.json())
         .then(data => {
             const temp = Math.round(data.main.temp);
-            document.getElementById('weather-display').textContent = `${temp}°C`;
+            document.getElementById('.weather').textContent = `${temp}°C`;
 
         })
 
         .catch(error => {
-            document.getElementById('weather-display').textContent = 'N/A';
+            document.getElementById('.weather').textContent = 'N/A';
         });
         
-}
 
+}
 getWeather();
