@@ -4,4 +4,6 @@ could not commit on last repository, i exceeded the file size limit and couldn't
 
 Attributions:
 
-All content 
+All content and media was provided by client. 
+
+Code was created by Demri Johnson designed based on assignment criteria and past coding projects.
