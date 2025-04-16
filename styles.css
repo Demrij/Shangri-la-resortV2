@@ -8,7 +8,7 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5rem;
     color: black;
-    background-color: sandybrown;
+    background-color: burlywood;
     padding: 1.5rem;
 
 }
@@ -20,21 +20,39 @@ header{
     padding: 2rem 0;
     border-radius: .3rem;
 }
+.header-container{
+    max-width: 120%;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas:"logo" "weather" "nav";
+    gap: .5rem;
+    justify-items: center;
+    align-items: center;
+}
 
 .logo{
-    max-width: 50%;
+    
+    grid-area: logo;
+    max-width: 90%;
 }
 
-nav{
-    width: 100%;
-    padding: 1rem 0;
-    width: 100%;
+nav ul {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  flex-wrap: wrap;
+
 }
+
 nav a{
 
     color: steelblue;
     text-decoration: none;
     margin-bottom: 1rem;
+    
 }  
 
 nav a:hover{
@@ -62,13 +80,13 @@ h1{
 h2{
     text-align: center;
     color: darkslateblue;
-    margin-bottom: 2rem;
+    margin: 2rem;
 }
 
 h3{
     text-align: center;
     color: darkslateblue;
-    margin-bottom: 1rem;
+    margin: 2rem;
     text-decoration: underline;
 }
 
@@ -79,7 +97,9 @@ h4{
 }
 
 p{
-    margin: 1.5rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
 }
 
 ul{
@@ -91,21 +111,76 @@ ul{
     align-items: center;
     object-fit: cover;
     border-radius: 1rem;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section img{
+
     width: 80%;
     border-radius: 1rem;
     border: .5rem solid lightslategrey;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: .3rem;
-
+    margin-bottom: .5rem;
 
 }
 
+.features{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.features-box{
+    background-color: rgb(213, 225, 233);
+    text-align: center;
+    justify-content: center;
+    border: 0.2rem solid lightsteelblue ;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features-box a{
+    color: darkslateblue;
+}
+
+.features-box a:hover{
+    color: lightgoldenrodyellow;
+    background: lightsteelblue;
+    border-radius: 2rem;
+    padding: .5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+footer{
+    background-color: lightsteelblue;
+    color: darkslateblue;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center; 
+    }
+}
+
+@media (min-width: 2000px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr); /* Force a 2-column grid */
+    }
+}
 
 
 
